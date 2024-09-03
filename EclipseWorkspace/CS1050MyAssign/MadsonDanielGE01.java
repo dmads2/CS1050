@@ -47,7 +47,15 @@ public class MadsonDanielGE01 {
 		double midtermgrade = 70.0;
 		double finalexamgrade = 85.0;
 		
+		//calculate final grade
 		
+		double finalgrade = ((gegrade * GE_WEIGHT) + (participationgrade * PART_WEIGHT) + (commgrade * COMM_WEIGHT) + (quizgrade * QUIZ_WEIGHT) + 
+				(projectgrade * PROJECT_WEIGHT) + (midtermgrade * MIDTERM_WEIGHT) + (finalexamgrade * FINALEXAM_WEIGHT));
+		
+		
+		//print name and final grade
+		System.out.println("Madson, Daniel");
+		System.out.printf("%.2f", finalgrade);
 		
 
 	}
