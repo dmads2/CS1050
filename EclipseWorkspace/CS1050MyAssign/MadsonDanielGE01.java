@@ -70,7 +70,6 @@ public class MadsonDanielGE01 {
 		//System.out.print(finalgrade);
 		System.out.printf("%.2f",finalgrade);
 
-		
 
 	}
 
