@@ -56,10 +56,14 @@ public class MadsonDanielGE01 {
 		double finalgrade = ((gegrade * GE_WEIGHT) + (participationgrade * PART_WEIGHT) + (commgrade * COMM_WEIGHT) + (quizgrade * QUIZ_WEIGHT) + 
 				(projectgrade * PROJECT_WEIGHT) + (midtermgrade * MIDTERM_WEIGHT) + (finalexamgrade * FINALEXAM_WEIGHT));
 		
+		/*runtime error
+		int number = 10;
+		System.out.print(number / 0);
+		*/
 		
 		//print name and final grade (with 2 decimal points only)
 		System.out.println("Madson, Daniel");
-		System.out.printf("%.2f", finalgrade);
+		System.out.printf("%.2f",finalgrade);
 
 		
 
