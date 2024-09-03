@@ -60,6 +60,10 @@ public class MadsonDanielGE01 {
 		int number = 10;
 		System.out.print(number / 0);
 		*/
+
+		/*logic error
+		finalgrade = finalgrade + gegrade;
+		*/
 		
 		//print name and final grade (with 2 decimal points only)
 		System.out.println("Madson, Daniel");
