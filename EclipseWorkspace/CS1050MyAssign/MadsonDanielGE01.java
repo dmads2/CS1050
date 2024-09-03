@@ -18,7 +18,9 @@ public class MadsonDanielGE01 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//two paragraphs about myself
+		
 		System.out.println("Hello my name is Daniel Madson. I've been passionate about computers ever since I first started playing videogames.");
 		System.out.println("This has led me to pursue a computer science degree. Although I am not a huge fan, I think I will stick it out anyway,");
 		System.out.println("as I feel like it is a very valuable degree and I don't necessarily need to go into software development with it.");
@@ -30,6 +32,7 @@ public class MadsonDanielGE01 {
 		System.out.println();
 		
 		//creating constants for grade weights
+		
 		final double GE_WEIGHT = 0.15;
 		final double PART_WEIGHT = 0.10;
 		final double COMM_WEIGHT = 0.10;
@@ -39,6 +42,7 @@ public class MadsonDanielGE01 {
 		final double FINALEXAM_WEIGHT = 0.20;
 		
 		//declaring my assignment grades for future calculation
+		
 		double gegrade = 95.0;
 		double participationgrade = 92.0;
 		double commgrade = 88.0;
@@ -53,9 +57,10 @@ public class MadsonDanielGE01 {
 				(projectgrade * PROJECT_WEIGHT) + (midtermgrade * MIDTERM_WEIGHT) + (finalexamgrade * FINALEXAM_WEIGHT));
 		
 		
-		//print name and final grade
+		//print name and final grade (with 2 decimal points only)
 		System.out.println("Madson, Daniel");
 		System.out.printf("%.2f", finalgrade);
+
 		
 
 	}
