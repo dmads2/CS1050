@@ -67,6 +67,7 @@ public class MadsonDanielGE01 {
 		
 		//print name and final grade (with 2 decimal points only)
 		System.out.println("Madson, Daniel");
+		//System.out.print(finalgrade);
 		System.out.printf("%.2f",finalgrade);
 
 		
