@@ -21,7 +21,7 @@ public class BodyMassIndex
 		Scanner input = new Scanner(System.in);
 		
 		// ADD CODE name object variable input 
-		
+		//what does this mean^^^- not sure what to do here
 		
 		// Tell the user what the program will do.
 		System.out.println("This program will calculate your " + "body mass index, or BMI.");
