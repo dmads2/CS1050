@@ -34,7 +34,7 @@ public class GuessNumber {
 	      else
 	        System.out.println("Your guess is too low");
 	      
-	      input.close(); 
+	      //input.close(); 
 
 	    } 
 		
