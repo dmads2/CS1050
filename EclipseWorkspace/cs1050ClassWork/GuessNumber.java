@@ -25,7 +25,7 @@ public class GuessNumber {
 	      System.out.print("\nEnter your guess: ");
 	      guess = input.nextInt();
 	      
-	      input.close(); 
+	      //input.close(); 
 
 	      if (guess == number)
 	        System.out.println("Yes, the number is " + number);
@@ -33,6 +33,8 @@ public class GuessNumber {
 	        System.out.println("Your guess is too high");
 	      else
 	        System.out.println("Your guess is too low");
+	      
+	      input.close(); 
 
 	    } 
 		
