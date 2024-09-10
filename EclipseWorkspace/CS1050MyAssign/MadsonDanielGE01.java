@@ -33,28 +33,34 @@ public class MadsonDanielGE01 {
 		
 		//creating constants for grade weights
 		
-		final double GE_WEIGHT = 0.15;
+		//updated to remove midterms and reallocate grade weights accordingly
+		
+		final double GE_WEIGHT = 0.20;
 		final double PART_WEIGHT = 0.10;
 		final double COMM_WEIGHT = 0.10;
-		final double QUIZ_WEIGHT = 0.10;
+		final double QUIZ_WEIGHT = 0.20;
 		final double PROJECT_WEIGHT = 0.20;
-		final double MIDTERM_WEIGHT = 0.15;
+		//final double MIDTERM_WEIGHT = 0.15;
 		final double FINALEXAM_WEIGHT = 0.20;
 		
 		//declaring my assignment grades for future calculation
+		
+		//updated to remove midtermgrade according to L06 instructions
 		
 		double gegrade = 95.0;
 		double participationgrade = 92.0;
 		double commgrade = 88.0;
 		double quizgrade = 87.0;
 		double projectgrade = 93.0;
-		double midtermgrade = 70.0;
+		//double midtermgrade = 70.0;
 		double finalexamgrade = 85.0;
 		
 		//calculate final grade
 		
+		//updated to remove the midtermgrade according to L06 instructions
+		
 		double finalgrade = ((gegrade * GE_WEIGHT) + (participationgrade * PART_WEIGHT) + (commgrade * COMM_WEIGHT) + (quizgrade * QUIZ_WEIGHT) + 
-				(projectgrade * PROJECT_WEIGHT) + (midtermgrade * MIDTERM_WEIGHT) + (finalexamgrade * FINALEXAM_WEIGHT));
+				(projectgrade * PROJECT_WEIGHT) + (finalexamgrade * FINALEXAM_WEIGHT));
 		
 		/*runtime error
 		int number = 10;
