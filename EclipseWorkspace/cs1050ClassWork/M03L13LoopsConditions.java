@@ -14,7 +14,7 @@ public class M03L13LoopsConditions {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		/*
+		
 		
 		//code to sum the numbers from 1 to 5 using a for loop, should equal 15
 		int forTestSum = 0; //need this here for scope reasons
@@ -55,10 +55,10 @@ public class M03L13LoopsConditions {
 		
 		System.out.println("the sum of the odd numbers between 1 and 5 is: " + oddSum);
 		
-		*/
 		
 		
-		/*
+		
+		
 		//code to ask the user to enter an age, if age is not greater than 0 repeat the question until a valid age is entered
 		Scanner input = new Scanner(System.in);
 		int loopControl = 1;
@@ -66,11 +66,11 @@ public class M03L13LoopsConditions {
 		{
 			System.out.println("enter an age that is greater than 0");
 			String ageInput = input.next();
-			if (ageInput > 0)
+			if (ageInput > 0);
 		}
 		input.close();
 		
-		*/
+		
 	}
 
 }
