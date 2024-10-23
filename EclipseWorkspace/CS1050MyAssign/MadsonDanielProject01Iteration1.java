@@ -17,6 +17,7 @@ public class MadsonDanielProject01Iteration1 {
 	}
 	public static void displayCourseGrading() {
 		
+		
 		//display summary of program- grade categories and weights AND grading scale
 		System.out.println("CS1050 Final Grade Calculator\n"
 				+ "-------------------------------------------------------------------------------");
@@ -25,12 +26,14 @@ public class MadsonDanielProject01Iteration1 {
 				+ "such as: grade categories, grade weights, and the grading scale.\n"
 				+ "-------------------------------------------------------------------------------");
 		
+		
 		//declaring all grade % weight constants
 		final double CLASS_PART_WEIGHT = 0.12;
 		final double GUIDED_EXPL_WEIGHT = 0.22;
 		final double MOD_QUIZZES_WEIGHT = 0.22;
 		final double PROJECT_ITER_WEIGHT = 0.22;
 		final double FINAL_WEIGHT = 0.22;
+		
 		
 		//display grade categories and weights
 		System.out.println("Grade Category | % Weight\n"
@@ -40,6 +43,17 @@ public class MadsonDanielProject01Iteration1 {
 		System.out.println("Module Quizzes: " + MOD_QUIZZES_WEIGHT*100 + "%");
 		System.out.println("Project Iterations: " + PROJECT_ITER_WEIGHT*100 + "%");
 		System.out.println("Final: " + FINAL_WEIGHT*100 + "%");
+		System.out.println("-------------------------------------------------------------------------------");
+		
+		
+		//display grading scale
+		System.out.println("Grading Scale\n"
+				+ "-------------------------------------------------------------------------------");
+		System.out.println("A: 90% to 100%");
+		System.out.println("B: 80% to < 90%");
+		System.out.println("C: 70% to < 80%");
+		System.out.println("D: 60% to < 70%");
+		System.out.println("F: < 60%");
 	}
 
 }
