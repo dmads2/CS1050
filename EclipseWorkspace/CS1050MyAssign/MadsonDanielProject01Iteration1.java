@@ -17,8 +17,10 @@ public class MadsonDanielProject01Iteration1 {
 		
 		//preparing for enterValidGrade method
 		Scanner input = new Scanner(System.in);
-		enterValidGrade(105, 0, input);
+		//enterValidGrade(105, 0, input);
 		
+		double finalGradePrint = enterValidGrade(105,0, input);
+		System.out.println("The final class percentage grade is " + finalGradePrint + "%");
 		
 	}
 	public static void displayCourseGrading() {
@@ -119,11 +121,11 @@ public class MadsonDanielProject01Iteration1 {
 		final double PROJECT_ITER_WEIGHT = 0.22;
 		final double FINAL_EXAM_WEIGHT = 0.22;
 		
-		//TO DO do final percentage calc 
 		double finalGrade = ((gradeEntryCP*CLASS_PART_WEIGHT) + (gradeEntryGE*GUIDED_EXPL_WEIGHT) + 
 				(gradeEntryMQ*MOD_QUIZZES_WEIGHT) + (gradeEntryPI*PROJECT_ITER_WEIGHT) +
 				(gradeEntryFE*FINAL_EXAM_WEIGHT));
-		System.out.println("The final class percentage grade is " + finalGrade + "%");
+		
 		return finalGrade;
 	}
+	
 }
