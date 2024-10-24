@@ -32,9 +32,12 @@ public class MadsonDanielProject01Iteration1 {
 		System.out.println("Do you wish to calculate another student's grade?"
 				+ "\nEnter y for yes and n for no.");
 		
-		String loopEntry = input.next();
-		charRepeat = loopEntry.charAt(0);
-		//charRepeat = input1.next().charAt(0);
+		//String loopEntry = input.next();
+		//charRepeat = loopEntry.charAt(0);
+		charRepeat = input.next().charAt(0);
+		if (charRepeat != 'y') {
+			System.out.println("Exiting program.");		
+		}
 		} while (charRepeat != 'n');
 		
 		input.close();
