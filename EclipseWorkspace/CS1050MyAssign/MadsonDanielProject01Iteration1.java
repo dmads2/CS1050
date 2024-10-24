@@ -14,7 +14,7 @@ public class MadsonDanielProject01Iteration1 {
 	public static void main(String[] args) {
 		
 		displayCourseGrading();
-		
+
 		char charRepeat;
 		Scanner input = new Scanner(System.in);
 		
@@ -22,10 +22,12 @@ public class MadsonDanielProject01Iteration1 {
 		//preparing for enterValidGrade method
 		
 		double finalGradePrint = enterValidGrade(105,0, input);
+		System.out.println("-------------------------------------------------------------------------------");
 		System.out.println("The final class percentage grade is: " + finalGradePrint + "%");
 		
 		char charGradeLetter = determineLetterGrade(finalGradePrint);
-		System.out.println("Final Letter Grade: " + charGradeLetter);
+		System.out.println("Final Letter Grade: " + charGradeLetter
+				+ "\n-------------------------------------------------------------------------------");
 		
 		System.out.println("Do you wish to calculate another student's grade?"
 				+ "\nEnter y for yes and n for no.");
