@@ -1,9 +1,13 @@
-/**
- * 
- */
-
-/**
- * 
+/*
+Madson, Daniel
+CS1050: Deborah Harding, T/R
+Project 1 Iteration 1
+Due Date 10/22/24
+Description:
+this program is a grade calculator for a cs1050 professor
+first the grading criteria are displayed, then allows for the professor to enter a grade for each category
+the program calculates and outputs a percent grade and a letter grade
+the program then prompts the professor to enter grades for another student
  */
 import java.util.Scanner;
 public class MadsonDanielProject01Iteration1 {
