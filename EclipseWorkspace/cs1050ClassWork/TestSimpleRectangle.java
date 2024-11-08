@@ -15,7 +15,7 @@ public class TestSimpleRectangle {
 
 		SimpleRectangle rectangle1 = new SimpleRectangle();
 		double area = rectangle1.getArea();
-		System.out.println("the area of rectangle 1 is: " + area);
+		System.out.println("the area of rectangle 1 is:" + rectangle1.getArea());
 	} //end of main
 } //end of class
 
@@ -36,6 +36,8 @@ class SimpleRectangle {
 		width = newWidth;
 		height = newHeight;
 	}
+	
+	//i should really add a get length and get height
 	
 	double getArea() {
 		return width * height;
