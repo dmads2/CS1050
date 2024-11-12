@@ -1,13 +1,14 @@
 /*
 Madson, Daniel
 CS1050: Deborah Harding, T/R
-Project 1 Iteration 1
-Due Date 10/22/24
+Project 1 Iteration 2
+Due Date 11/11/2024
 Description:
 this program is a grade calculator for a cs1050 professor
-first the grading criteria are displayed, then allows for the professor to enter a grade for each category
-the program calculates and outputs a percent grade and a letter grade
-the program then prompts the professor to enter grades for another student
+We display some information about the calculator, and some information about the course grading criteria.
+Then we enter a grade for each category. The program calculates and outputs a percent grade and a letter 
+grade for the student. The program then prompts the professor to enter grades for another student or for
+the program to exit.
  */
 import java.util.Scanner;
 public class MadsonDanielProject01Iteration1 {
@@ -45,6 +46,10 @@ public class MadsonDanielProject01Iteration1 {
 		input.close();
 	}
 	
+	
+/*
+ * this method will display information about the course grading, like the grade categories and weights
+ */
 	public static void displayCourseGrading() {
 		
 		//display summary of program- grade categories and weights AND grading scale
@@ -85,7 +90,10 @@ public class MadsonDanielProject01Iteration1 {
 		System.out.println("F: < 60%");
 		System.out.println("-------------------------------------------------------------------------------");
 	}
-	
+
+/*
+ * this method determines if a valid grade is entered; a valid grade is anything from 0 to 105
+ */
 	public static double enterValidGrade(double max, double min, Scanner input) {
 		
 		//valid grades are from 0 to 105
@@ -149,7 +157,11 @@ public class MadsonDanielProject01Iteration1 {
 		
 		return finalGrade;
 	}
-	
+
+/*
+ * this method takes in the calculated final grade for the student and assigns it the proper letter grade
+ */
+
 	public static char determineLetterGrade(double finalGradePrint) {
 		
 		char charFinalGrade;
