@@ -25,14 +25,15 @@ public class MadsonDanielProject01Iteration2 {
 		double[] gradeCategoryWeights = {0.12, 0.22, 0.22, 0.22, 0.22};
 		//double[] studentFinalClassGrades = new double [5];
 		
-		double[] copyOfGrades = studentGrades;
 		
-		/*
 		for (int i = 1; i <= numberOfStudents; i++)
 		{
 			enterValidGrade(input);
 		}
-		*/
+		
+		double[] copyOfGrades = studentGrades;
+		
+		
 	} //end of main
 
 	public static void displayCourseGrading() {
@@ -90,10 +91,7 @@ public class MadsonDanielProject01Iteration2 {
 		return studentGrades; //need to return this to main so we can use it in other methods
 	} //end of enterValidGrade
 	
-	
-	
 	//this method will calculate the final grade 
-	//a[] represents the grades that were input from the user
 	public static double calculateFinalGrade(double gradeCategoryWeights[], double copyOfGrades[]) {
 		
 		double calculatedGrade = 0;
@@ -101,5 +99,30 @@ public class MadsonDanielProject01Iteration2 {
 		for (int i = 0; i < 5; i++) {
 			calculatedGrade = gradeCategoryWeights[i] * studentGrades[i];
 		}
+	}//end of calculateFinalGrade()
+	
+	//this method determines the letter grade of the grade that we just calculated 
+	//it will also return the char 
+	public static char determineLetterGrade(double finalGradePrint) {
+		
+		char charFinalGrade;
+		
+		if (finalGradePrint > 90) {
+			charFinalGrade = 'A';
+		}
+		else if ((finalGradePrint > 80) && (finalGradePrint < 90)) {
+			charFinalGrade = 'B';
+		}
+		else if ((finalGradePrint > 70) && (finalGradePrint < 80)) {
+			charFinalGrade = 'C';
+		}
+		else if ((finalGradePrint > 60) && (finalGradePrint < 70)) {
+			charFinalGrade = 'D';
+		}
+		else {
+			charFinalGrade = 'F';
+		}
+		
+		return charFinalGrade;
 	}
 } //end of class
