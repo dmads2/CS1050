@@ -17,7 +17,14 @@ public class MadsonDanielProject01Iteration2 {
 		
 		
 		displayCourseGrading();
-
+		
+		System.out.println("How many students are in the class?");
+		int numberOfStudents = input.nextInt();
+		
+		for (int i = 1; i <= numberOfStudents; i++)
+		{
+			enterValidGrade();
+		}
 	} //end of main
 
 	public static void displayCourseGrading() {
@@ -62,4 +69,17 @@ public class MadsonDanielProject01Iteration2 {
 				
 			} //end of displayCourseGrading
 	
+	//this method will make sure we get valid inputs for the grades so we dont check later; valid grades are from 0 to 105
+	public static double  enterValidGrade() {
+		
+		Scanner input = new Scanner (System.in);
+		double validGradeDouble = input.nextDouble();
+		
+		while (validGradeDouble < 0 || validGradeDouble > 105) 
+		{
+			System.out.println("Enter a valid grade from 0 to 105");
+			validGradeDouble = input.nextDouble();
+		}
+		
+	} //end of enterValidGrade
 } //end of class
