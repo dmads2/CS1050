@@ -15,16 +15,24 @@ public class MadsonDanielProject01Iteration2 {
 
 	public static void main(String[] args) {
 		
-		
+		Scanner input = new Scanner (System.in);
 		displayCourseGrading();
 		
 		System.out.println("How many students are in the class?");
 		int numberOfStudents = input.nextInt();
+
+		//String [] gradeCategoryNames = {"Class Participation", "Guided Exploration", "Module Quizzes", "Projects", "Final Exam"};
+		double[] gradeCategoryWeights = {0.12, 0.22, 0.22, 0.22, 0.22};
+		//double[] studentFinalClassGrades = new double [5];
 		
+		double[] copyOfGrades = studentGrades;
+		
+		/*
 		for (int i = 1; i <= numberOfStudents; i++)
 		{
-			enterValidGrade();
+			enterValidGrade(input);
 		}
+		*/
 	} //end of main
 
 	public static void displayCourseGrading() {
@@ -70,16 +78,28 @@ public class MadsonDanielProject01Iteration2 {
 			} //end of displayCourseGrading
 	
 	//this method will make sure we get valid inputs for the grades so we dont check later; valid grades are from 0 to 105
-	public static double  enterValidGrade() {
+	public static double[] enterValidGrade(Scanner input) {
 		
-		Scanner input = new Scanner (System.in);
-		double validGradeDouble = input.nextDouble();
-		
-		while (validGradeDouble < 0 || validGradeDouble > 105) 
-		{
-			System.out.println("Enter a valid grade from 0 to 105");
-			validGradeDouble = input.nextDouble();
+		//we will reuse this 1d array for each student
+		double[] studentGrades = new double[5];
+			
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Enter the grades for the student.");
+			studentGrades[i] = input.nextDouble();
 		}
-		
+		return studentGrades; //need to return this to main so we can use it in other methods
 	} //end of enterValidGrade
+	
+	
+	
+	//this method will calculate the final grade 
+	//a[] represents the grades that were input from the user
+	public static double calculateFinalGrade(double gradeCategoryWeights[], double copyOfGrades[]) {
+		
+		double calculatedGrade = 0;
+		
+		for (int i = 0; i < 5; i++) {
+			calculatedGrade = gradeCategoryWeights[i] * studentGrades[i];
+		}
+	}
 } //end of class
