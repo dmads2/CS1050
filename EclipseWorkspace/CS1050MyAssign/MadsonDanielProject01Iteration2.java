@@ -31,7 +31,7 @@ public class MadsonDanielProject01Iteration2 {
 			enterValidGrade(input);
 		}
 		
-		double[] copyOfGrades = studentGrades;
+		//double[] copyOfGrades = studentGrades;
 		
 		
 	} //end of main
@@ -97,7 +97,7 @@ public class MadsonDanielProject01Iteration2 {
 		double calculatedGrade = 0;
 		
 		for (int i = 0; i < 5; i++) {
-			calculatedGrade = gradeCategoryWeights[i] * studentGrades[i];
+			//calculatedGrade = gradeCategoryWeights[i] * studentGrades[i];
 		}
 	}//end of calculateFinalGrade()
 	
