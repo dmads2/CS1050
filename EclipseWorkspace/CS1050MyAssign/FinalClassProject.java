@@ -15,7 +15,7 @@ public class FinalClassProject
 		double[] percentWeights1050 = {.12,.22,.22,.22,.22};
 		int MAX_STUDENTS_1050 = 10;
 		
-		/* UNCOMMENT OUT THE FOLLOWING AFTER YOU IMPLEMENT AND TEST EACH CLASS INDIVIDUALLY
+		
 		Course course1050 = new Course("CS1050", categories1050, percentWeights1050, MAX_STUDENTS_1050);
 		
 		try {
@@ -55,7 +55,7 @@ public class FinalClassProject
             System.out.println("Error: Can't Upload course information" + e.getMessage());
         }
 		
-	*/	
+		
 
 	}//end of main
 	
@@ -98,7 +98,10 @@ class Person {
 //instructor class
 class Instructor 
 	extends Person {
-
+	
+	void createInstructor(String firstName, String lastName, String email) {
+		
+	}
 	
 }//end of Instructor class
 
@@ -115,7 +118,7 @@ class Student
 	
 	public double[] getGrades() {
 		int i = numberOfStudents;
-		return;
+		
 	}
 	
 	public void setFinalGrade(double finalGrade) {
@@ -130,6 +133,27 @@ class Student
 
 //course class
 class Course {
+	String courseName;
+	String[] categories;
+	double[] weights;
+	Student[] students;
+	Instructor instructor;
+	int numberOfStudents;
+	
+	public Course(String courseName, String categories[], double[] weights, int maxStudents) {
+		this.courseName = courseName;
+		this.categories = categories;
+		this.weights = weights;
+		this.students = new Student[maxStudents];
+	}
+	
+	public void courseSetUp(String courseName, String[] categories) {
+		
+	}
+	
+	public String getCourseName() {
+		return courseName;
+	}
 	
 	
 }//end of Course Class
