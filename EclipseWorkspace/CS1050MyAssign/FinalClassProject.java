@@ -147,8 +147,9 @@ class Course {
 		this.students = new Student[maxStudents];
 	}
 	
-	public void courseSetUp(String courseName, String[] categories) {
-		
+	public void courseSetUp(String courseName, String[] categories, String fileName) {
+		this.courseName = courseName;
+		this.categories = categories;
 	}
 	
 	public String getCourseName() {
