@@ -158,9 +158,7 @@ public class M04Project
 	}//end getValidDouble
 
 	/**
-	 * Determines letter grade for
-	 * @param double finalGrade
-	 * @return char letter grade
+	 * Determines letter grade for double finalGrade and returns char letterGrade
 	 */
 	public static char determineLetterGrade(double finalGrade)
 	{
